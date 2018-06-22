@@ -5,3 +5,5 @@
 #
 
 DEVICE_PATH := device/motorola/malmo
+
+BUILD_BROKEN_DUP_RULES := true
