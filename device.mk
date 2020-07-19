@@ -140,6 +140,10 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
 
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
