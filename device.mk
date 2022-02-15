@@ -136,6 +136,10 @@ PRODUCT_PACKAGES += \
 # Parition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm-service.clearkey
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
