@@ -143,6 +143,7 @@ BOARD_VENDOR := motorola
 TARGET_BOARD_PLATFORM := blair
 
 # Recovery
+$(call soong_config_set, ufsbsg, ufsframework, bsg)
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 90
 BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
