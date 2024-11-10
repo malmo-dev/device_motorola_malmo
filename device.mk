@@ -390,5 +390,16 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
+# WiFi Display
+PRODUCT_PACKAGES += \
+    android.media.audio.common.types-V2-cpp \
+    libdisplayconfig.system.qti \
+    libwfdaac_vendor \
+    vendor.display.config@2.0 \
+    vendor.qti.hardware.display.config-V5-ndk
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
+
 # Inherit from proprietary targets
 $(call inherit-product, vendor/motorola/malmo/malmo-vendor.mk)
