@@ -231,6 +231,36 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
+# Keymint
+PRODUCT_PACKAGES += \
+    android.hardware.authsecret-service.nxp
+
+PRODUCT_PACKAGES += \
+    android.hardware.authsecret@1.0.vendor \
+    android.hardware.gatekeeper-V1-ndk.vendor \
+    android.hardware.gatekeeper@1.0.vendor \
+    android.hardware.hardware_keystore.xml \
+    android.hardware.keymaster-V3-ndk.vendor \
+    android.hardware.keymaster-V4-ndk.vendor \
+    android.hardware.keymaster@3.0.vendor \
+    android.hardware.keymaster@4.1.vendor \
+    android.hardware.security.keymint-V1-ndk.vendor \
+    android.hardware.security.keymint-V2-ndk.vendor \
+    android.hardware.security.keymint-V3-ndk.vendor \
+    android.hardware.security.rkp-V3-ndk.vendor \
+    android.hardware.security.secureclock-V1-ndk.vendor \
+    android.hardware.security.sharedsecret-V1-ndk.vendor \
+    android.system.keystore2-V1-ndk.vendor \
+    lib_android_keymaster_keymint_utils.vendor \
+    libgatekeeper.vendor \
+    libsoft_attestation_cert.vendor \
+    libkeymaster_messages.vendor \
+    libkeymaster_portable.vendor
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml \
+    frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-V2-ndk.vendor
