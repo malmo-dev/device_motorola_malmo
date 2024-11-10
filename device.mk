@@ -317,6 +317,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service-qti
+
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio-V2-ndk.vendor \
