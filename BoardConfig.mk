@@ -137,6 +137,13 @@ TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 
 -include vendor/lineage/config/BoardConfigReservedSize.mk
 
+# Properties
+TARGET_ODM_PROP += $(DEVICE_PATH)/configs/props/odm.prop
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/configs/props/product.prop
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/configs/props/system_ext.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
+
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
 BOARD_VENDOR := motorola
