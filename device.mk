@@ -144,6 +144,47 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Init
+PRODUCT_PACKAGES += \
+    fstab.qcom
+
+PRODUCT_PACKAGES += \
+    init.class_main.sh \
+    init.mmi.touch.sh \
+    init.qcom.sensors.sh \
+    init.crda.sh \
+    init.oem.hw.sh \
+    init.qcom.sh \
+    init.kernel.post_boot-blair.sh \
+    init.qcom.class_core.sh \
+    init.qti.chg_policy.sh \
+    init.kernel.post_boot-holi.sh \
+    init.qcom.coex.sh \
+    init.qti.kernel.sh \
+    init.kernel.post_boot.sh \
+    init.qcom.early_boot.sh \
+    init.qti.qcv.sh \
+    init.mmi.boot.sh \
+    init.qcom.post_boot.sh \
+    vendor_modprobe.sh
+
+PRODUCT_PACKAGES += \
+    init.mmi.overlay.rc \
+    init.qti.kernel.rc \
+    init.target.rc \
+    init.mmi.charge_only.rc \
+    init.mmi.rc \
+    init.qti.qcv.rc \
+    init.mmi.chipset.rc \
+    init.qcom.rc \
+    init.recovery.qcom.rc
+
+PRODUCT_PACKAGES += \
+    ueventd.qcom.rc
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
