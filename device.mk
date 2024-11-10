@@ -116,6 +116,13 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.offlinecamera-V1-ndk.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
+PRODUCT_PACKAGES += \
+    libcamera2ndk_vendor \
+    libcamera_metadata.vendor \
+    libexif.vendor \
+    libutilscallstack.vendor \
+    libyuv.vendor
+
 # Display
 PRODUCT_PACKAGES += \
     vendor.display.config@1.11.vendor \
@@ -296,9 +303,13 @@ PRODUCT_COPY_FILES += \
 
 # QMI
 PRODUCT_PACKAGES += \
+    libcurl.vendor \
     libjson \
+    libjsoncpp.vendor \
+    libcurl.vendor \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor \
+    libsqlite.vendor \
     libvndfwk_detect_jni.qti \
     libvndfwk_detect_jni.qti.vendor
 
