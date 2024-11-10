@@ -326,6 +326,9 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.voice-V2-ndk.vendor \
     android.hardware.radio@1.6.vendor
 
+PRODUCT_PACKAGES += \
+    librmnetctl
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
