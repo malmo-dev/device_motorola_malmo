@@ -116,6 +116,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.offlinecamera-V1-ndk.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
+# Parition
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
